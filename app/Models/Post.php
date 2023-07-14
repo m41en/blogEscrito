@@ -14,7 +14,7 @@ class Post extends Model
     protected $primaryKey = 'id_post';
 
     public function author() {
-        return $this->belongsTo(Author::class, 'fk_id_author');
+        return $this->belongsTo(Author::class, 'fk_id_user');
     }
 /*
     public function publicity() {
