@@ -12,7 +12,6 @@ class User extends Authenticatable
 {
 
     use HasFactory;
-    use SoftDeletes;
     use HasApiTokens;
     protected $table = "users";
     protected $primaryKey = 'id_user';
