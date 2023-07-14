@@ -13,8 +13,8 @@ class Post extends Model
     protected $table = "posts";
     protected $primaryKey = 'id_post';
 
-    public function author() {
-        return $this->belongsTo(Author::class, 'fk_id_user');
+    public function user() {
+        return $this->belongsTo(User::class, 'fk_id_user');
     }
 /*
     public function publicity() {
