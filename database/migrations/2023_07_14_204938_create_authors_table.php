@@ -13,8 +13,8 @@ class CreateAuthorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('authors', function (Blueprint $table) {
-            $table->id('id_author');
+        Schema::create('users', function (Blueprint $table) {
+            $table->id('id_user');
             $table->string('username')->unique();
             $table->string('email')->unique();
             $table->string('password');
