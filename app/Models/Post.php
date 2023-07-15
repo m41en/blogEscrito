@@ -8,8 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
-    use SoftDeletes;
-    use HasApiTokens;
     protected $table = "posts";
     protected $primaryKey = 'id_post';
 
