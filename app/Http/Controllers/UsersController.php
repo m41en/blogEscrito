@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Hash;
 
 class UsersController extends Controller
 {
-
 	public function Register(Request $request){
         $u = new User();
         $u -> username = $request -> post("username");
@@ -19,7 +18,6 @@ class UsersController extends Controller
 
         return redirect("/login")-> with("created",true);
     }
-
 
     public function Login(Request $request){
         $credentials = $request->only('email', 'password');
