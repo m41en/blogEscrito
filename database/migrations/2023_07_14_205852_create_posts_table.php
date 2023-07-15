@@ -20,7 +20,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->string('body');
             $table->dateTime('datetime');
-
+          
             $table->foreign('fk_id_user')->references('id_user')->on('users');
             //$table->foreign('fk_id_publicity')->references('id_publicity')->on('publicity');
 
