@@ -33,5 +33,6 @@ class UserSeeder extends Seeder
         $user3 -> save();
     */
         User::factory(10)->create();
+        //Curso::factory(10)->has(Alumno::factory()->count(4))->create();
     }
 }
